@@ -38,6 +38,13 @@ module.exports = class GrassEater extends LivingCreature {
 
         return found;
     }
+
+    random(ch){
+        let found = this.chooseCell(ch);
+        let result = Math.floor(Math.random()*found.length)
+        return found[result];
+        }
+        
     //բազմանալ
     mul() {
         this.multiply++

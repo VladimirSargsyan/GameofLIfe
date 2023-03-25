@@ -27,6 +27,12 @@ module.exports = class Gardener extends LivingCreature{
         return super.chooseCell(char)
     }
 
+    random(ch){
+        let found = this.chooseCell(ch);
+        let result = Math.floor(Math.random()*found.length)
+        return found[result];
+        }
+
     mul() {
         this.multiply++;
         var emptyCells = this.chooseCell(0);
