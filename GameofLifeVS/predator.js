@@ -60,8 +60,8 @@ module.exports = class Predator extends LivingCreature{
     //bb
   mul() {
       this.multiply++
-      let emptyCell = this.chooseCell(0);
-      let newCell = random(emptyCell)
+    //   let emptyCell = this.chooseCell(0);
+      let newCell = this.random(0)
  
       if (newCell && this.energy > 15) {
           let newX = newCell[0];

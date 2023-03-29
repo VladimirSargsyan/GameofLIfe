@@ -138,7 +138,7 @@ p {
 	line-height: 25px;
 }
 
-button {
+.buttons {
 	width: 180px;
 	padding: 15px 0;
 	text-align: center;
@@ -165,10 +165,25 @@ span {
 	transition: 0.5s;
 }
 
-button:hover span {
+.buttons:hover span {
 	width: 100%;
 }
 
-button:hover {
+.buttons:hover {
 	border: none;
+}
+
+.button {
+	display: inline-flex;
+	height: 50px;
+	padding: 0;
+	background: #009578;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	overflow: hidden;
+	font-family: 'Quicksand' sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
 }
