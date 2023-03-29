@@ -1,7 +1,9 @@
+var socket = io()
+
 // function matrixGenerator(matrixSize,grass,grassEater,predator,jur,gardener) {
 //     var matrix = []
 
-const { join } = require("path/posix")
+// const { join } = require("path/posix")
 
 //     for (let i = 0; i < matrixSize; i++) {
 //         matrix.push([])
@@ -82,7 +84,7 @@ var side = 19
 
 function setup() {
     frameRate(15)
-    createCanvas(matrix[0].length * side ,matrix.length * side)
+    createCanvas(50 * side ,50 * side)
 
     // for (let y = 0; y < matrix.length; y++) {
     //     for (let x = 0; x < matrix[y].length; x++) {
@@ -119,7 +121,7 @@ function setup() {
 
 
 
-function draw() {
+function change(matrix) {
     
       for (let y = 0; y < matrix.length; y++) {
         for (let x = 0; x < matrix[y].length; x++) {
@@ -174,3 +176,5 @@ function draw() {
 //      }
   
 }
+
+socket.on("sendmatrix",change)

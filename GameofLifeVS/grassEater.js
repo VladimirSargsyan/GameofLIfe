@@ -48,8 +48,8 @@ module.exports = class GrassEater extends LivingCreature {
     //բազմանալ
     mul() {
         this.multiply++
-        let emptyCell = this.chooseCell(0);
-        let newCell = random(emptyCell)
+        // let emptyCell = this.chooseCell(0);
+        let newCell = this.random(0)
    console.log(newCell);
         if (newCell && this.energy > 5) {
             let newX = newCell[0];

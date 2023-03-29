@@ -47,7 +47,7 @@
 	background: #f44336;
 	display: block;
 	margin: auto;
-	transition: 0.5s;
+	transition: 0.7s;
 }
 
 .nav-links ul li:hover::after{
