@@ -70,7 +70,7 @@ var socket = io()
 // }
 
 // var matrix = matrixGenerator(30,40,15,8,10,10)
-var side = 19
+var side = 20
 //
 
 // var grassArr = []
@@ -178,3 +178,20 @@ function change(matrix) {
 }
 
 socket.on("sendmatrix",change)
+
+
+function Spring() {
+  socket.emit("spring");
+}
+
+function Summer() {
+  socket.emit("summer");
+}
+
+function Autumn() {
+  socket.emit("autumn");
+}
+
+function Winter() {
+  socket.emit("winter");
+}

@@ -160,3 +160,25 @@ function gameMove() {
 }
 
 setInterval(gameMove, 1000)
+
+var weather = 0;
+
+function Spring(){
+    weather = "spring";
+    io.sockets.emit('Spring', weather);
+}
+
+function Summer(){
+    weather = "summer";
+    io.sockets.emit('Summer', weather);
+}
+
+function Autumn(){
+    weather = "autumn";
+    io.sockets.emit('Autumn', weather);
+}
+
+function Winter(){
+    weather = "winter";
+    io.sockets.emit('Winter', weather);
+}

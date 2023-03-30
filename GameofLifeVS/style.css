@@ -173,7 +173,7 @@ span {
 	border: none;
 }
 
-.button {
+/* .button {
 	display: inline-flex;
 	height: 50px;
 	padding: 0;
@@ -186,4 +186,143 @@ span {
 	font-size: 16px;
 	font-weight: 500;
 	cursor: pointer;
+} */
+
+.button-container {
+	display: flex;
+	width: 100%;
+	min-height: 20vh;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .button {
+	appearance: none;
+	background: none;
+	border: none;
+	outline: none;
+  
+	padding: 10px 20px;
+	border-radius: 8px;
+	color: #212121;
+	font-size: 25px;
+	font-weight: 600;
+	margin: 0 25px;
+	cursor: pointer;
+	transition: 0.4s;
+  }
+  
+  .button-1 {
+	color: #16F705;
+	border: 3px solid #16F705;
+  }
+  
+  .button-1:hover {
+	color: #FFF;
+	background-color: #16F705;
+  }
+  
+  .button-2 {
+	color: #FFCE00;
+	border: 3px solid #FFCE00;
+  }
+  
+  .button-2:hover {
+	color: #FFF;
+	background-color: #FFCE00;
+  }
+  
+  .button-3 {
+	color: #F62D34;
+	border: 3px solid #F62D34;
+  }
+  
+  .button-3:hover {
+	color: #FFF;
+	background-color: #F62D34;
+  }
+  
+  .button-4 {
+	color: #2415FC;
+	border: 3px solid #2415FC;
+  }
+  
+  .button-4:hover {
+	color: #FFF;
+	background-color: #2415FC;
+  }
+  
+  .button-5 {
+	color: #9351F6;
+	border: 3px solid #9351F6;
+  }
+  
+  .button-5:hover {
+	color: #FFF;
+	background-color: #9351F6;
+  }
+
+.btn-wheather {
+	width: 100px;
 }
+
+.buttonk {
+	appearance: none;
+	background: none;
+	border: none;
+	outline: none;
+  
+	padding: 10px 20px;
+	border-radius: 8px;
+	color: #212121;
+	font-size: 17px;
+	font-weight: 600;
+	margin: 0 25px;
+	cursor: pointer;
+	transition: 0.4s;
+  }
+
+.button-6 {
+	color: #ECB3FF;
+	border: 3px solid #ECB3FF;
+	margin-bottom: 25px;
+  }
+
+  .button-6:hover {
+	color: black;
+	background-color: #ECB3FF;
+  }
+
+  .button-7 {
+	color: #0AF651;
+	border: 3px solid #0AF651;
+	margin-bottom: 25px;
+  }
+
+  .button-7:hover {
+	color: black;
+	background-color: #0AF651;
+  }
+
+  .button-8 {
+	color: #FFBE4D;
+	border: 3px solid #FFBE4D;
+	margin-bottom: 25px;
+  }
+
+  
+  .button-8:hover {
+	color: black;
+	background-color: #FFBE4D;
+  }
+
+  .button-9 {
+	color: #FFFFFF;
+	border: 3px solid #FFFFFF;
+	margin-bottom: 25px;
+  }
+
+  .button-9:hover {
+	color: black;
+	background-color: #FFFFFF;
+  }
