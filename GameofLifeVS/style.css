@@ -7,7 +7,7 @@
 .header {
 	min-height: 100vh;
 	width: 100%;
-	background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url("banner.png");
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url("img/banner.png");
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -63,7 +63,7 @@ canvas{
 .header2 {
 	min-height: 100vh;
 	width: 100%;
-	background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url("banner2.png");
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url("img/banner2.png");
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -283,14 +283,14 @@ span {
   }
 
 .button-6 {
-	color: #ECB3FF;
-	border: 3px solid #ECB3FF;
+	color: #FAFAD2;
+	border: 3px solid #FAFAD2;
 	margin-bottom: 25px;
   }
 
   .button-6:hover {
 	color: black;
-	background-color: #ECB3FF;
+	background-color: #FAFAD2;
   }
 
   .button-7 {

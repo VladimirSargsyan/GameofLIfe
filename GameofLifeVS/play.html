@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game of LIfe - Play</title>
-    <link rel="icon" type="image/gif" href="icon.png">
+    <link rel="icon" type="image/gif" href="img/icon.png">
     <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
         <script src="/socket.io/socket.io.js"></script>
@@ -35,19 +35,19 @@
        </nav>
 
        <div class="button-container">
-        <button class="button button-1">Խոտ</button>
-        <button class="button button-2">Խոտակեր</button>
-        <button class="button button-3">Գիշատիչ</button>
-        <button class="button button-4">Բնապահպան</button>
-        <button class="button button-5">Որսորդ</button>
+        <button onclick="addGrass()" class="button button-1">Խոտ</button>
+        <button onclick="addGrassEater()" class="button button-2">Խոտակեր</button>
+        <button onclick="addPredator()" class="button button-3">Գիշատիչ</button>
+        <button onclick="addJur()" class="button button-4">Բնապահպան</button>
+        <button onclick="addGardener()" class="button button-5">Որսորդ</button>
         <!-- ----------------------------------------------- -->
       </div>
 
       <div class="btn-wheather">
-        <button class="buttonk button-6">Գարուն</button>
-        <button class="buttonk button-7">Ամառ</button>
-        <button class="buttonk button-8">Աշուն</button>
-        <button class="buttonk button-9">Ձմեռ</button>
+        <button onclick="Spring()" class="buttonk button-6">Գարուն</button>
+        <button onclick="Summer()" class="buttonk button-7">Ամառ</button>
+        <button onclick="Autumn()" class="buttonk button-8">Աշուն</button>
+        <button onclick="Winter()" class="buttonk button-9">Ձմեռ</button>
     </div> 
  
    </section>
