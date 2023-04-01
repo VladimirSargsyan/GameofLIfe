@@ -122,8 +122,8 @@ module.exports = class Predator extends LivingCreature{
 
   move() {
       this.energy--
-      let emptyCell = this.chooseCell(0);
-      let newCell = random(emptyCell)
+    //   let emptyCell = this.chooseCell(0);
+    let newCell = this.random(0)
 
       if (newCell) {
           let newX = newCell[0];

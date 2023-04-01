@@ -9,6 +9,27 @@ function setup() {
     
    }
 
+let ses =[]
+function Back(color){
+   
+ if(color==1){
+    scolors =["#e1e96b","#ffd966","#fff2cc"]
+ }else if(color ==2){
+    scolors =["#7c5c00","#ffc210","#fce5cd"]
+ }else if(color ==3){
+    scolors =["#0087ff","#003564","#cfe2f3"]
+ }else if(color ==4){
+    scolors =["#43ff00","#1a5f02","#d9ead3"]
+ }else if (color ==0) {
+       scolors =["green","yellow","gray"]
+ }
+ ses=scolors
+
+ return ses
+}
+
+Back(1)
+
 
 function change(matrix) {
     
@@ -41,18 +62,61 @@ function change(matrix) {
 socket.on("sendmatrix",change)
 
 
-function Spring() {
-  socket.emit("spring");
-}
+// function Spring() {
+//   socket.emit("spring");
+// }
 
-function Summer() {
-  socket.emit("summer");
-}
+// function Summer() {
+//   socket.emit("summer");
+// }
 
-function Autumn() {
-  socket.emit("autumn");
-}
+// function Autumn() {
+//   socket.emit("autumn");
+// }
 
-function Winter() {
-  socket.emit("winter");
-}
+// function Winter() {
+//   socket.emit("winter");
+// }
+
+
+socket.on ("send datas", function(counts){
+    
+  document.getElementById("grass").innerHTML = counts.grass;
+  document.getElementById("grassEater").innerHTML = counts.grassEater;
+  document.getElementById("predator").innerHTML = counts.predator;
+  document.getElementById("jur").innerHTML = counts.jur;
+  document.getElementById("gardener").innerHTML = counts.gardener;
+  
+
+ 
+  
+ 
+})
+
+const ButtonForAddChar = document.getElementsByClassName(" button ")
+
+
+ButtonForAddChar[0].addEventListener("click", function () {
+
+    socket.emit("send button", 1);
+})
+
+ButtonForAddChar[1].addEventListener("click", function () {
+
+    socket.emit("send button", 2);
+})
+
+ButtonForAddChar[2].addEventListener("click", function () {
+
+    socket.emit("send button", 3);
+})
+ButtonForAddChar[3].addEventListener("click", function () {
+
+    socket.emit("send button", 4);
+})
+ButtonForAddChar[4].addEventListener("click", function () {
+
+  socket.emit("send button", 5);
+})
+
+
