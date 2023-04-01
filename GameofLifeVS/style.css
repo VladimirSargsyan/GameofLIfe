@@ -173,21 +173,6 @@ span {
 	border: none;
 }
 
-/* .button {
-	display: inline-flex;
-	height: 50px;
-	padding: 0;
-	background: #009578;
-	border: none;
-	outline: none;
-	border-radius: 5px;
-	overflow: hidden;
-	font-family: 'Quicksand' sans-serif;
-	font-size: 16px;
-	font-weight: 500;
-	cursor: pointer;
-} */
-
 .button-container {
 	display: flex;
 	width: 100%;
@@ -201,10 +186,9 @@ span {
 	background: none;
 	border: none;
 	outline: none;
-  
 	padding: 10px 20px;
-	border-radius: 8px;
-	color: #212121;
+	border-radius: 18px;
+	color: #15d3d3;
 	font-size: 25px;
 	font-weight: 600;
 	margin: 0 25px;
@@ -262,6 +246,17 @@ span {
 	background-color: #9351F6;
   }
 
+  .button-6 {
+	color: black;
+	background-color: #CAD9DE;
+	border: 3px solid #CAD9DE;
+  }
+
+  /* .button-6:hover {
+	color: #FFF;
+	background-color: #CAD9DE;
+  } */
+
 .btn-wheather {
 	width: 100px;
 }
@@ -271,7 +266,6 @@ span {
 	background: none;
 	border: none;
 	outline: none;
-  
 	padding: 10px 20px;
 	border-radius: 8px;
 	color: #212121;
@@ -282,55 +276,56 @@ span {
 	transition: 0.4s;
   }
 
-.button-6 {
+.button-7 {
 	color: #FAFAD2;
 	border: 3px solid #FAFAD2;
 	margin-bottom: 25px;
   }
 
-  .button-6:hover {
+  .button-7:hover {
 	color: black;
 	background-color: #FAFAD2;
   }
 
-  .button-7 {
+  .button-8 {
 	color: #0AF651;
 	border: 3px solid #0AF651;
 	margin-bottom: 25px;
   }
 
-  .button-7:hover {
+  .button-8:hover {
 	color: black;
 	background-color: #0AF651;
   }
 
-  .button-8 {
+  .button-9 {
 	color: #FFBE4D;
 	border: 3px solid #FFBE4D;
 	margin-bottom: 25px;
   }
 
   
-  .button-8:hover {
+  .button-9:hover {
 	color: black;
 	background-color: #FFBE4D;
   }
 
-  .button-9 {
+  .button-10 {
 	color: #FFFFFF;
 	border: 3px solid #FFFFFF;
 	margin-bottom: 25px;
   }
 
-  .button-9:hover {
+  .button-10:hover {
 	color: black;
 	background-color: #FFFFFF;
   }
 
-  .table {
-	  color: white;
-	  margin-left: 50px;
-	  position: absolute;
-	  top: 23%;
-	  left: 50%;
-  }
+ .table {
+	width: 50%;
+	margin-top: -290px;
+	margin-left: 380px;
+	color: #F5ECEE;
+	background-color: rgba(4, 9, 30, 0.7);
+	/* background-color: #172A57; */
+} 
