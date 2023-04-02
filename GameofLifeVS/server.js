@@ -157,26 +157,34 @@ function gameMove() {
     io.emit("sendmatrix", matrix)
 }
 
-setInterval(gameMove, 300)
+let i = setInterval(gameMove, 300)
 
 var weather;
 
 function Spring() {
+    clearInterval(i)
+    setInterval(gameMove, 300)
     weather = "spring";
     io.sockets.emit('Spring', weather);
 }
 
 function Summer() {
+    clearInterval(i)
+    setInterval(gameMove, 500)
     weather = "summer";
     io.sockets.emit('Summer', weather);
 }
 
 function Autumn() {
+    clearInterval(i)
+    setInterval(gameMove, 700)
     weather = "autumn";
     io.sockets.emit('Autumn', weather);
 }
 
 function Winter() {
+    clearInterval(i)
+    setInterval(gameMove, 1000)
     weather = "winter";
     io.sockets.emit('Winter', weather);
 }
